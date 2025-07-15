@@ -2,22 +2,12 @@ package analyzer
 
 import (
 	"fmt"
-	"strconv"
-
+	"gql-cost-profiler/analyzer/types"
 	"github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 	"github.com/vektah/gqlparser/v2/validator"
 )
 
-
-type Node struct {
-	FieldName string
-	FieldArguments   []*FieldArgument
-}
-type FieldArgument struct {
-	Name string
-	Value interface{}
-}
 
 
 func ParseGQLSchema(schemaStr string) (*ast.Schema, error) {
@@ -40,14 +30,9 @@ func ParseGQLQuery(schema *ast.Schema, queryStr string) (*ast.QueryDocument, err
 	return query, nil
 }
 
-func ExtractQueryNodes(doc *ast.QueryDocument, schema *ast.Schema)(map[string][]*Node) {
-	// Returns a Map Structured like
-	// { P_Type: *Node{
-	// 			field name,
-	// 			field arguments
-	//		}
-	// }
-	nodes := make(map[string][]*Node)
+func ExtractQueryNodes(doc *ast.QueryDocument, schema *ast.Schema)(map[string][]*types.Node) {
+
+	nodes := make(map[string][]*types.Node)
 	visitedFragments := make(map[string]struct{})
 
 
@@ -64,15 +49,15 @@ func ExtractQueryNodes(doc *ast.QueryDocument, schema *ast.Schema)(map[string][]
 					continue
 				}
 
-				var newFieldArgs []*FieldArgument
+				var newFieldArgs []*types.FieldArgument
 				for _,arg := range s.Arguments {
 					newFieldArgs = append(newFieldArgs,
-						&FieldArgument{
+						&types.FieldArgument{
 						Name: arg.Name,
 						Value : arg.Value.Raw,
 					})
 				}
-				nodes[parentType] = append(nodes[parentType], &Node{FieldName: s.Name, FieldArguments: newFieldArgs})
+				nodes[parentType] = append(nodes[parentType], &types.Node{FieldName: s.Name, FieldArguments: newFieldArgs})
 
 				walkSelections(s.SelectionSet, fieldDef.Type.Name())
 
@@ -108,65 +93,4 @@ func ExtractQueryNodes(doc *ast.QueryDocument, schema *ast.Schema)(map[string][]
 	}
 
 	return nodes
-}
-
-func applyCost(nodes map[string][]*Node, config map[string]map[string]map[string]interface{}) (float64,error) {
-
-	cost := float64(0)
-
-	for parentType,nodes := range nodes {
-
-		for _,node := range nodes {
-
-			fieldCfg,ok := config[parentType][node.FieldName]
-			if !ok { continue }
-
-			baseCost,err := convertToFloat64(fieldCfg["base"])
-			if err != nil { return float64(-1) ,fmt.Errorf("%w", err) }
-			cost = baseCost + cost
-
-			perItemArg,hasArg := fieldCfg["perItemArg"].(string)
-			if !hasArg { continue }
-
-			perItemCost,err := convertToFloat64(fieldCfg["perItemCost"])
-			if err != nil { return float64(-1) ,fmt.Errorf("%w", err) }
-
-			for _,arg := range node.FieldArguments {
-
-				if arg.Name == perItemArg {
-
-					argVal,err := convertToFloat64(arg.Value)
-					if err != nil { return float64(-1) ,fmt.Errorf("%w", err) }
-					cost = (argVal * perItemCost) + cost
-
-				}
-
-			}
-
-		}
-
-	}
-	return cost,nil
-}
-
-func convertToFloat64(value interface{}) (float64,error){
-
-	switch t := value.(type){
-	case string:
-		newValue, err := strconv.ParseFloat(t, 64)
-		if err != nil {
-			return float64(-1) , fmt.Errorf("error converting type string to float64 for value... %w 💥", err)
-		}
-		return newValue,nil
-
-	case int:
-		newValue := float64(value.(int))
-		return newValue,nil
-
-	case float64:
-		return value.(float64),nil
-
-	default:
-		return float64(-1) , fmt.Errorf("invalid type for converting to float64 for perItemCost... type was: %T 💥", t)
-	}
 }
