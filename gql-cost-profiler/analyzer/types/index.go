@@ -1,5 +1,6 @@
 package types
 
+
 type FieldCost struct {
 	Base 	  	float32
 	PerItemArg 	string
@@ -7,7 +8,7 @@ type FieldCost struct {
 }
 type CostConfig map[string]map[string]FieldCost
 
-
+//---------------
 
 type Node struct {
 	FieldName string
