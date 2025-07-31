@@ -8,6 +8,7 @@ import (
 )
 
 type ProfileContext struct {
+	SchemaString string
 	QueryString string
 	Schema *ast.Schema
 	QueryDoc *ast.QueryDocument
@@ -41,7 +42,7 @@ func (b *BaseHandler) CallNext(ctx *ProfileContext) error {
 
 type SchemaParser struct { BaseHandler }
 func (h *SchemaParser) Handle(ctx *ProfileContext) error {
-	schema,err := ParseGQLSchema(ctx.QueryString)
+	schema,err := ParseGQLSchema(ctx.SchemaString)
 	if err != nil {
 		return err
 	}
@@ -82,8 +83,9 @@ func (h *CostApplier) Handle(ctx *ProfileContext) error {
     return h.CallNext(ctx)
 }
 
-func ProfileGQLQueryWithChain(query string, costCfg types.CostConfig) (float32,error) {
+func ProfileGQLQueryWithChain(schemaStr string, query string, costCfg types.CostConfig) (float32,error) {
 	ctx := &ProfileContext{
+		SchemaString: schemaStr,
 		QueryString:  query,
 		CostCfg: costCfg,
 	}
