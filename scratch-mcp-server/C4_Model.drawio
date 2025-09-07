@@ -1,0 +1,192 @@
+<mxfile host="65bd71144e">
+    <diagram id="U4nBYmfB86E5RVRr318T" name="System Context">
+        <mxGraphModel dx="995" dy="928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="210" width="260" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;System Context Diagram&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="80" width="330" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="LLM Application" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="170" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="205" y="260" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="325" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="380" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Clients" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="270" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="html=1;whiteSpace=wrap;shape=isoCube2;backgroundOutline=1;isoAngle=15;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="220" width="90" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="html=1;whiteSpace=wrap;shape=isoCube2;backgroundOutline=1;isoAngle=15;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="290" width="90" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="html=1;whiteSpace=wrap;shape=isoCube2;backgroundOutline=1;isoAngle=15;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="365" width="90" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="MCP Servers" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="612.5" y="180" width="125" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="1:1 connection client per server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="435" y="210" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="737.5" y="330" as="sourcePoint"/>
+                        <mxPoint x="907.5" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="235" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="280" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="920" y="325" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="External API&#39;s" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="195" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Communicatoin protocol (gRPC, HTTP)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="280" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-26" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="310" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-52" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="9qp1rgAnBwMAJgA7jmng-28" target="9qp1rgAnBwMAJgA7jmng-31" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-28" value="Client Protocol" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="375" y="325" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-51" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="9qp1rgAnBwMAJgA7jmng-31" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="530" y="340" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-55" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="9qp1rgAnBwMAJgA7jmng-31" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="295" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-31" value="" style="rounded=1;whiteSpace=wrap;html=1;rotation=90;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="315" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-33" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Transport Layer&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="330" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-38" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Understandings&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Transport Layer -- Establishes and maintains the connection with the MCP server/client and sends the content over the network. Does not care about intepreting the bytes&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Protocl Layer -- Converts the raw data to a structured response/request and will match responses to the original request using unique ID&#39;s it is also reponsbile for validation error reporting and routing. Should provide a good abstracted API for the client to interact with&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="610" width="950" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-56" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="9qp1rgAnBwMAJgA7jmng-46" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="296.33333333333337" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-46" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="310" width="185" height="66.25" as="geometry"/>
+                </mxCell>
+                <mxCell id="9qp1rgAnBwMAJgA7jmng-48" value="Server Protocol" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="542.5" y="330" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="nICj5DI9xEzOtOaotQl6" name="Container Diagram">
+        <mxGraphModel dx="869" dy="977" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10000" pageHeight="10000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="vaty8L83Q9-kslrnLsRD-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Container Diagram&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="30" width="290" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="xJqEILIBYSc9N7Lx9qSh-1" value="LLM Application (Client)" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="180" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="xJqEILIBYSc9N7Lx9qSh-2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="140" width="530" height="530" as="geometry"/>
+                </mxCell>
+                <mxCell id="xJqEILIBYSc9N7Lx9qSh-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Client Protocol&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="100" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xJqEILIBYSc9N7Lx9qSh-4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="160" width="210" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="xJqEILIBYSc9N7Lx9qSh-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Message Framing&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Handled by library implementations. The purpose of messagae framing is to give scope of the message and provide a way to know where a message starts and ends throughout the connection&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="160" width="180" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="xJqEILIBYSc9N7Lx9qSh-7" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="160" width="210" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="xJqEILIBYSc9N7Lx9qSh-8" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Request ID&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Keeps track of our request (async) used to pair up with responses/track any failed request&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="160" width="180" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="xJqEILIBYSc9N7Lx9qSh-9" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="400" width="210" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="xJqEILIBYSc9N7Lx9qSh-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Data Formating&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;JSON RPC 2.0 Library can format our request. Service to format our data based on the decided protocol&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="410" width="180" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="775" y="180" width="210" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Transport Layer&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="140" width="225" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="795" y="200" width="170" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-6" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="795" y="390" width="175" height="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-8" value="&lt;b&gt;Extractor&lt;br&gt;&lt;/b&gt;Should extract the raw data from the request/response body and feed it to the respective protocol" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="805" y="210" width="150" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-9" value="&lt;b&gt;Sender&lt;/b&gt;&lt;br&gt;Should take the data from its respective protocol wrap it in an appropiate format (HTTP) and send it over the network" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="805" y="420" width="150" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-10" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1050" y="140" width="520" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-11" value="&lt;b&gt;Server Protocol&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1060" y="100" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-12" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1080" y="175" width="185" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-14" value="&lt;b&gt;Message Framing&lt;/b&gt;&lt;br&gt;(same as client)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1117.5" y="190" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-15" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1340" y="175" width="185" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-16" value="&lt;b style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;Response ID&lt;/b&gt;&lt;br style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;should provide a matching response ID to the request to mark as completed&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1340" y="200" width="183.75" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="Eifu-nNsfGWq647xZzAK-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1085" y="410" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="Eifu-nNsfGWq647xZzAK-2" value="&lt;b&gt;Tool Discovery&lt;/b&gt;&lt;br&gt;Responsbile for tracking what tools are available and their descriptions" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1107.5" y="435" width="132.5" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="ksmCiU1daF_gja7M9dWL-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1345" y="410" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="ksmCiU1daF_gja7M9dWL-2" value="&lt;b&gt;Internal Tools&lt;/b&gt;&lt;br&gt;The set of tools the server owns that can be called without external communicatoin" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1380" y="442.5" width="110" height="87.5" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

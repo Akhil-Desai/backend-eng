@@ -1,0 +1,18 @@
+Today: Create Config Schema so it can be validated
+
+## Improvements
+
+### Design Patterns
+- Implement a more robust configuration management system instead of relying on hardcoded paths and manual file reading. Consider using a library like Viper.
+- Use a dedicated error handling library (e.g., `pkg/errors`) to provide more context and stack traces for errors.
+- Create a `CostAnalyzer` struct to encapsulate the logic for parsing, profiling, and cost calculation, rather than having standalone functions. This will make the code more modular and testable.
+
+### Functionality
+- Add support for validating the cost configuration file against a JSON schema to ensure its structure is correct.
+- Implement a mechanism to load the GraphQL schema from a file or a URL, making the tool more flexible.
+- Enhance the CLI to provide more informative output, such as a detailed cost breakdown per field and the total cost.
+- Add comprehensive unit tests for the `cost.go` and `profiler.go` files to ensure the accuracy of the cost calculations.
+- Improve the `convertToFloat32` function in `analyzer/cost.go` to handle more numeric types and provide clearer error messages for invalid conversions.
+- The `main.go` file is currently just a placeholder. It should be updated to call the CLI logic from `cli/cli.go`.
+- The `ProfileGQLQuery` function in `analyzer/profiler.go` has a hardcoded empty string for the schema. This should be updated to take the schema as an argument.
+- The `cost.go` file has a function `applyCost` that takes a `types.CostConfig`. The CLI currently reads the file but doesn't do anything with the content. This needs to be implemented.
