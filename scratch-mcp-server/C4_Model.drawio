@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="U4nBYmfB86E5RVRr318T" name="System Context">
-        <mxGraphModel dx="995" dy="928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+        <mxGraphModel dx="920" dy="953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -104,7 +104,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="nICj5DI9xEzOtOaotQl6" name="Container Diagram">
-        <mxGraphModel dx="869" dy="977" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10000" pageHeight="10000" math="0" shadow="0">
+        <mxGraphModel dx="804" dy="953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10000" pageHeight="10000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -138,52 +138,46 @@
                 <mxCell id="xJqEILIBYSc9N7Lx9qSh-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Data Formating&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;JSON RPC 2.0 Library can format our request. Service to format our data based on the decided protocol&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="230" y="410" width="180" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="775" y="180" width="210" height="440" as="geometry"/>
                 </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Transport Layer&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Transport Layer&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="790" y="140" width="225" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-                    <mxGeometry x="795" y="200" width="170" height="170" as="geometry"/>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-6" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="792.5" y="280" width="175" height="175" as="geometry"/>
                 </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-6" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-                    <mxGeometry x="795" y="390" width="175" height="175" as="geometry"/>
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-9" value="&lt;b&gt;Sender&lt;/b&gt;&lt;br&gt;Should take the data from its respective protocol wrap it in an appropiate format (HTTP) and send it over the network" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="805" y="320" width="150" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-8" value="&lt;b&gt;Extractor&lt;br&gt;&lt;/b&gt;Should extract the raw data from the request/response body and feed it to the respective protocol" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="805" y="210" width="150" height="90" as="geometry"/>
-                </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-9" value="&lt;b&gt;Sender&lt;/b&gt;&lt;br&gt;Should take the data from its respective protocol wrap it in an appropiate format (HTTP) and send it over the network" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="805" y="420" width="150" height="90" as="geometry"/>
-                </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-10" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-10" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="1050" y="140" width="520" height="520" as="geometry"/>
                 </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-11" value="&lt;b&gt;Server Protocol&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-11" value="&lt;b&gt;Server Protocol&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1060" y="100" width="110" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-12" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-12" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="1080" y="175" width="185" height="185" as="geometry"/>
                 </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-14" value="&lt;b&gt;Message Framing&lt;/b&gt;&lt;br&gt;(same as client)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-14" value="&lt;b&gt;Message Framing&lt;/b&gt;&lt;br&gt;(same as client)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1117.5" y="190" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-15" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-15" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="1340" y="175" width="185" height="185" as="geometry"/>
                 </mxCell>
-                <mxCell id="SDBYMW-GumEw-l4PPaEx-16" value="&lt;b style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;Response ID&lt;/b&gt;&lt;br style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;should provide a matching response ID to the request to mark as completed&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="SDBYMW-GumEw-l4PPaEx-16" value="&lt;b style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;Response ID&lt;/b&gt;&lt;br style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;should provide a matching response ID to the request to mark as completed&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1340" y="200" width="183.75" height="55" as="geometry"/>
                 </mxCell>
-                <mxCell id="Eifu-nNsfGWq647xZzAK-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                <mxCell id="Eifu-nNsfGWq647xZzAK-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="1085" y="410" width="180" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="Eifu-nNsfGWq647xZzAK-2" value="&lt;b&gt;Tool Discovery&lt;/b&gt;&lt;br&gt;Responsbile for tracking what tools are available and their descriptions" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="Eifu-nNsfGWq647xZzAK-2" value="&lt;b&gt;Tool Discovery&lt;/b&gt;&lt;br&gt;Responsbile for tracking what tools are available and their descriptions" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1107.5" y="435" width="132.5" height="65" as="geometry"/>
                 </mxCell>
-                <mxCell id="ksmCiU1daF_gja7M9dWL-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                <mxCell id="ksmCiU1daF_gja7M9dWL-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="1345" y="410" width="180" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="ksmCiU1daF_gja7M9dWL-2" value="&lt;b&gt;Internal Tools&lt;/b&gt;&lt;br&gt;The set of tools the server owns that can be called without external communicatoin" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="ksmCiU1daF_gja7M9dWL-2" value="&lt;b&gt;Internal Tools&lt;/b&gt;&lt;br&gt;The set of tools the server owns that can be called without external communicatoin" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1380" y="442.5" width="110" height="87.5" as="geometry"/>
                 </mxCell>
             </root>

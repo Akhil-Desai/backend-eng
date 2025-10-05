@@ -1,5 +1,5 @@
 import unittest
-from protocol.client.LLM import llm
+from protocol.client.llm import llm
 
 
 class TestLLMCall(unittest.TestCase):
